@@ -12,3 +12,5 @@ Don't `FROM` this image directly. You don't need to. You only need a subset of t
 in this image in order to use `ghc`.
 
 See the Dockerfile in my docker-jekyll-stack repo for the variables and files you need.
+
+Note: Give your Docker instance 4 CPUs and 8GB RAM minimum or the build may randomly fail.

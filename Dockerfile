@@ -1,4 +1,8 @@
-FROM ednutting/jekyll-ghcup
+ARG JEKYLL_GHCUP_IMAGE=ednutting/jekyll-ghcup:latest
+
+FROM $JEKYLL_GHCUP_IMAGE
+
+# Note: Give your Docker instance 4 CPUs and 8GB RAM minimum or the build may randomly fail
 
 ## Sections of this script for building GHC are modified from:
 ## https://github.com/jkachmar/alpine-haskell-stack/blob/master/Dockerfile
